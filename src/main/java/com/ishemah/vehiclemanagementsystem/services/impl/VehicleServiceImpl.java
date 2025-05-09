@@ -63,7 +63,6 @@ public class VehicleServiceImpl implements IVehicleService {
 
             Vehicle vehicle = Mapper.getMapper().map(dto, Vehicle.class);
             String chassisNumber = chassisNumberGenerator.generateUniqueChasisNumber();
-
             vehicle.setChassisNumber(chassisNumber);
             vehicle.setOwner(owner);
             vehicle.setCurrentPlate(plateNumber);
